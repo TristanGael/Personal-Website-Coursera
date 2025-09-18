@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to Web Development Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="hamburger-icon" class="hamburger">
+            <img src="menu-burger.png" alt="Menu" style="width:32px;height:32px;" />
+        </div>
+    </header>
+
+    <section id="about-me" role="region" aria-labelledby="about-me-heading">
+        <h2 id="about-me-heading">About Me</h2>
+        <p>
+            Hi, I'm a web developer passionate about creating modern, responsive websites and applications. I enjoy working with HTML, CSS, and JavaScript to build engaging user experiences.
+        </p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="filter-buttons">
+            <button class="filter-btn" data-category="all">All</button>
+            <button class="filter-btn" data-category="website">Websites</button>
+            <button class="filter-btn" data-category="game">Games</button>
+        </div>
+        <article class="project" data-category="website">
+            <figure>
+                <img src="project1.jpg" alt="Screenshot of Personal Website" />
+                <figcaption>Personal Website</figcaption>
+            </figure>
+            <p>A responsive personal website showcasing my portfolio and skills.</p>
+        </article>
+        <article class="project" data-category="website">
+            <figure>
+                <img src="project2.jpg" alt="Screenshot of Landing Page project" />
+                <figcaption>Landing Page</figcaption>
+            </figure>
+            <p>A modern landing page designed for a startup, featuring clean layouts and interactive elements.</p>
+        </article>
+        <article class="project" data-category="game">
+            <figure>
+                <img src="project3.jpg" alt="Screenshot of JavaScript Game project" />
+                <figcaption>JavaScript Game</figcaption>
+            </figure>
+            <p>A browser-based game built with JavaScript, focusing on fun and user engagement.</p>
+        </article>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Responsive Design</li>
+            <li>Git & GitHub</li>
+            <li>Accessibility</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
